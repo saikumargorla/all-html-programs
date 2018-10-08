@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function copy() {
+    b1 = document.getElementById("mySelect").value
+	text="Selected city is"
+	document.getElementById("ab").innerHTML=text +'&nbsp'+':'+'&nbsp' +b1	
+}
+</script>
+</head>
+<form style="margin-top:50;margin-left:50;font-family:arial">
+
+<select id="mySelect"  
+style="margin-bottom:5px;align:top;
+height:30;font-size:16;" onchange="copy();">
+    <option value="">Select a city</option>
+    <option value="Hyderabad" >Hyderabad</option>
+    <option value="Bangalore" >Bangalore</option>
+    <option value="Chennai" >Chennai</option>
+    <option value="Delhi" >Delhi</option>
+</select>
+<p id="ab"></p>
+</form>
+</html>

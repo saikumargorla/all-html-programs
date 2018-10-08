@@ -1,0 +1,48 @@
+
+<html>
+<body style="font-family:arial;size:16;
+margin-left:50;margin-top:30">
+<b>Given number is 45.58986</b><br><br>
+
+toString() method to convert number to string
+<p id="demo"></p>
+<p id="demo1"></p>
+
+toExponential() method:
+<p id="demo2"></p>
+toFixed() method:
+<p id="demo3"></p>
+toPrecision() method:
+<p id="demo4"></p>
+valueOf() method:
+<p id="demo5"></p>
+parseFloat() method:
+<p id="demo6"></p>
+parseInt() method:
+<p id="demo7"></p>
+<script>
+    var temperature = 45.58986;
+	document.getElementById('demo').innerHTML=
+	typeof temperature;
+    var convert = temperature.toString();
+
+    document.getElementById('demo1').innerHTML=
+	typeof convert;
+	
+	document.getElementById('demo2').innerHTML=
+	temperature.toExponential()+"<br>"+												
+	temperature.toExponential(2)+"<br>"+
+	temperature.toExponential(3);
+	document.getElementById('demo3').innerHTML=
+	               temperature.toFixed(3);
+document.getElementById('demo4').innerHTML=
+                   temperature.toPrecision(5);
+document.getElementById('demo5').innerHTML=
+                   temperature.valueOf();
+document.getElementById('demo6').innerHTML=
+                   parseFloat(temperature);
+document.getElementById('demo7').innerHTML=
+                   parseInt(temperature);		
+</script>
+</body>
+</html>

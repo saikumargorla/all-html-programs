@@ -1,0 +1,86 @@
+
+<body style="margin-left:50;margin-top:30">
+<form style="font-family:arial;font-size:16;">
+<h1>Mouse Events</h1>
+<input type="button" 
+value="Single, Double or Right Click" 
+onclick="logEvent(event)" 
+       onmousedown="logEvent(event)" 
+	   onmouseup="logEvent(event)" 
+	   onmouseover="logEvent(event)" 
+	   onmousemove="logEvent(event)"
+       onmouseout="logEvent(event)" 
+	   ondblclick="logEvent(event)" 
+	   oncontextmenu="logEvent(event)">
+<input type="button" value="Clear" 
+       onclick="clearText()" />
+<br /><br />
+<textarea style="padding-left:5px" 
+         id="txtArea" rows="10" cols="20"></textarea>
+<br>
+<script type="text/javascript">
+    function logEvent(event) 
+    {
+        event = event || window.event;
+        document.getElementById("txtArea").value += 
+		event.type + "\r\n";
+    }
+
+    function clearText() 
+    {
+        document.getElementById("txtArea").value = "";
+    }
+</script>
+<br><br>
+<form >
+<h1 onmouseover="this.style.color='red'" 
+    onmouseout="this.style.color='black'">
+	This is  h1 tag</h1>
+<h2 onmouseover="this.style.color='red'" 
+    onmouseout="this.style.color='black'">
+	This is  h2 tag</h2>
+<h3 onmouseover="this.style.color='red'" 
+    onmouseout="this.style.color='black'">
+	This is  h3 tag</h3>
+<h4 onmouseover="this.style.color='red'" 
+    onmouseout="this.style.color='black'">
+	This is  h4 tag</h4>
+<h5 onmouseover="this.style.color='red'" 
+    onmouseout="this.style.color='black'">
+	This is  h5 tag</h5>
+<h6 onmouseover="this.style.color='red'" 
+    onmouseout="this.style.color='black'">
+	This is  h6 tag</h6>
+</form>
+<br><br>
+
+<form style="font-family:arial;size:16">
+<h1 >keyborad events<h1>
+<input type="text" value="" 
+       onkeypress="logEvent1(event)" 
+       onkeydown="logEvent1(event)" 
+	   onkeyup="logEvent1(event)" >
+<input type="button" value="Clear" 
+       onclick="clearText1()" />
+<br /><br />
+<textarea style="padding-left:5px" 
+          id="txtArea1" rows="10" 
+		  cols="20"></textarea>
+<script type="text/javascript">
+    function logEvent1(event) 
+    {
+        event = event || window.event;
+        document.getElementById("txtArea1").value += 
+		event.type + "\r\n";
+    }
+
+    function clearText1() 
+    {
+        document.getElementById("txtArea1").value = "";
+    }
+</script>
+
+</body>
+
+
+

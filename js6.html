@@ -1,0 +1,254 @@
+<html>
+<head>
+</head>
+<form name="f1" 
+style="font-family:arial;font-size:16;
+margin-left:50;margin-top:50">
+<p>Who is your favorite hero</p>
+<label>
+<input type="radio" id="rdo" name="r" 
+       value="Pawan Kalyan" onClick="func();">
+       Pawan Kalyan</label>
+<br>
+<label>
+<input type="radio" id="rdo1" name="r" 
+       value="Rana" onClick="func();">
+       Rana</label>
+
+<br>
+<label>
+<input type="radio" id="rdo2" name="r" 
+       value="Prabhas" onClick="func();">
+	   Prabhas</label>
+<p id="ab"></p>
+<script>
+function func(){
+
+var text = "My favourite hero is"
+var type=document.getElementById("rdo");
+if(document.getElementById("rdo").checked){
+var d= document.getElementById("rdo").value
+document.getElementById("ab").innerHTML=text +'&nbsp'+':'+'&nbsp'+ d
+}
+else if(document.getElementById("rdo1").checked){
+var d= document.getElementById("rdo1").value
+document.getElementById("ab").innerHTML=text +'&nbsp'+':'+'&nbsp' + d
+}
+if(document.getElementById("rdo2").checked){
+var d= document.getElementById("rdo2").value
+document.getElementById("ab").innerHTML=text +'&nbsp'+':'+'&nbsp'+ d
+}
+}
+</script>
+</form>
+</html>
+<!--
+
+<html>
+<head>
+<script>
+function func(){
+var a=document.f1.t1.value;
+text="My name is:"
+document.getElementById("ab").innerHTML=text + document.f1.t1.value;
+}
+</script>
+</head>
+<form name="f1" 
+style="margin-left:50;font-family:arial;font-size:16">
+<input type="text"  name=t1 
+placeholder="Enter your name" style="height:30;font-size:16;
+margin-left:;margin-top:50;padding-left:10px;" >
+<input type="button" value="save" onClick="func();"><br>
+<p id="ab"></p>
+</form>
+</html>
+
+
+
+
+<form style="margin-left:50;margin-top:50">
+<input type="submit" name="sendNewSms" 
+class="inputButton" id="sendNewSms" value=" Send " />
+<label>
+<input type="checkbox" id="disableBtn" 
+style="margin-left:30;margin-top:10px;padding-bottom:2px;margin-right:-0.5px">disable</label>
+</form>
+<script>
+var submit = document.getElementById('sendNewSms'),
+    checkbox = document.getElementById('disableBtn'),
+    disableSubmit = function(e) {
+        submit.disabled = this.checked
+    };
+
+checkbox.addEventListener('change', disableSubmit);
+</script>
+
+
+
+
+<html>
+<head>
+</head>
+<form name="f1" 
+style="font-family:arial;font-size:16;
+margin-left:50;margin-top:50">
+<input type="radio" id="rdo" name="r" 
+value="Pawan Kalyan" onClick="func();">Pawan Kalyan
+<br>
+<input type="radio" id="rdo1" name="r" 
+value="Rana" onClick="func();">Rana
+
+<br>
+<input type="radio" id="rdo2" name="r" 
+value="Prabhas" onClick="func();">Prabhas
+<p id="ab"></p>
+<script>
+function func(){
+
+var text = "My favourite hero is:"
+var type=document.getElementById("rdo");
+if(document.getElementById("rdo").checked){
+var d= document.getElementById("rdo").value
+document.getElementById("ab").innerHTML=text + d
+}
+else if(document.getElementById("rdo1").checked){
+var d= document.getElementById("rdo1").value
+document.getElementById("ab").innerHTML=text + d
+}
+if(document.getElementById("rdo2").checked){
+var d= document.getElementById("rdo2").value
+document.getElementById("ab").innerHTML=text + d
+}
+}
+</script>
+</form>
+</html>
+
+
+
+
+<html>
+<head>
+<script>
+function copy() {
+
+    b1 = document.getElementById("mySelect").value
+	text="selected city is"
+	document.getElementById("ab").innerHTML=text +'&nbsp'+':'+'&nbsp' +b1
+	
+}
+</script>
+</head>
+<form style="margin-top:50;margin-left:50;font-family:arial">
+
+<select id="mySelect"  
+style="margin-bottom:5px;align:top;
+height:30;font-size:16;" onchange="copy();">
+    <option value="">Select a city</option>
+    <option value="Hyderabad" >Hyderabad</option>
+    <option value="Bangalore" >Bangalore</option>
+    <option value="Chennai" >Chennai</option>
+    <option value="Delhi" >Delhi</option>
+</select>
+<p id="ab"></p>
+</form>
+</html>
+
+
+
+
+
+
+
+
+<html>
+<head>
+<style>
+input{
+width:400;
+height:40;
+border-radius:5px;
+border:1px solid gray;
+font-size:18;
+font-family:arial;
+padding-left:10px;
+}
+p{
+font-size:20;
+font-family:arial
+
+}
+.bat{
+ size:20;}
+</style>
+
+</head>
+<body style="background-color:#e6e6e6;">
+<form name="f1" 
+style="margin-left:300;margin-top:50"">
+<p style="font-size:30;font-family:arial" name="p1">
+Create Your Account</p>
+
+<input type="text" name="t1" 
+       placeholder="Your Name">
+	    <br><br>
+	   <input type="text" name="t2" 
+       placeholder="Mobile number or email address">
+	   <br><br>
+	   <textarea style="vertical-align:middle;height:50;
+	             padding-left:10px;font-size:14"  
+	   placeholder="Enter Your Address"name="t3">
+</textarea><br><br>
+<input type="button" value="save" onClick="func();" style="width:200;height:40;
+        font-family:arial;background-color:#00802b;
+		color:white;font-size:20;border-radius:5px;
+		border:1px solid gray" >
+		<br>
+<p id="ab"></p>
+<p id="abc"></p>
+<p id="abcd"></p>
+<script type="text/javascript">
+function func(){
+var a=document.f1.t1.value;
+var b=document.f1.t2.value;
+var c=document.f1.t3.value;
+
+if(!a==""){
+text="<label> Name</label> "
+document.getElementById("ab").innerHTML=text + '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp'+':'+ '&nbsp'+document.f1.t1.value;
+}
+if(a==""){
+document.getElementById("ab").innerHTML=""
+}
+
+if(!b==""){
+text="<label>Phone no</label>"
+document.getElementById("abc").innerHTML=text + '&nbsp'+':'+ '&nbsp'+document.f1.t2.value;
+}
+if(b==""){
+document.getElementById("abc").innerHTML=""
+}
+
+if(!c==""){
+text="<label>Address </label>"
+document.getElementById("abcd").innerHTML=text + '&nbsp&nbsp'+':'+ '&nbsp'+document.f1.t3.value;
+}
+if(c==""){
+document.getElementById("abcd").innerHTML=""
+}
+}
+</script>
+</form>
+</body>
+</html>
+
+
+
+
+
+-->
+
+
+
+

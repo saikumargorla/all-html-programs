@@ -1,0 +1,31 @@
+<form style="margin-left:50;margin-top:50;
+font-family:arial">
+<select name="test1" id="test1" style="height:30;
+font-size:16">
+    <option value="0">Select country</option>
+    <option value="1">India</option>
+    <option value="2">America</option>
+	<option value="3">SriLanka</option>
+	<option value="4">Pakistan</option>
+</select>
+<select name="test2" id="test2" style="height:30;
+font-size:16;margin-left:30">
+    <option value="0">Select city</option>
+    <option value="1">Hyderabad</option>
+    <option value="2">Chicago</option>
+	<option value="3">Colombo</option>
+	<option value="4">Lahore</option>
+</select>
+<script>
+document.getElementById('test1').addEventListener("change", function () {
+    document.getElementById('test2').selectedIndex = 
+	document.getElementById('test1').selectedIndex;
+}, false);
+document.getElementById('test2').addEventListener("change", function () {
+    document.getElementById('test1').selectedIndex = 
+	document.getElementById('test2').selectedIndex;
+}, false);
+
+
+</script>
+</form>

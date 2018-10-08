@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+p{
+color:green
+}
+</style>
+</head>
+<body style="font-family:arial;size:16;color:brown">
+join() method<br>
+fruits array using join method
+<p id="p1"></p>
+pop() method<br>
+poping the last element using pop() method
+<p id="p2"></p>
+After poping the array
+<p id="p3"></p>
+push() method<br>
+pushing element into the array using push("element") method
+<p id="p4"></p>
+After pushing the array
+<p id="p5"></p>
+Pushing the element at third position using fruits[3].
+After pushing the array
+<p id="p6"></p>
+Pushing the element at last using fruits[fruits.length].
+After pushing the array
+<p id="p7"></p>
+delete method<br>
+deleting the element at 2nd position 
+in array using delete fruits[2].
+after deleting the array 
+<p id="p8"></p>
+splice method
+<p id="p9"></p>
+concat method
+<p id="p10"></p>
+slice method
+<p id="p11"></p>
+sorting
+<p id="p12"></p>
+sorting in reverse order
+<p id="p13"></p>
+length of the array
+<p id="p14"></p>
+<p id="p15"></p>
+length of the string in the array(fruits[4].length)
+<p id="p16"></p>
+<script type="text/Javascript">
+var fruits=["Apple","Mango","custard Apple","Banana","Orange"]
+var vegetables=["tomato","brinjal"]
+document.getElementById("p1").innerHTML=fruits.join(" * ");
+document.getElementById("p2").innerHTML=fruits.pop();
+document.getElementById("p3").innerHTML=fruits;
+document.getElementById("p4").innerHTML=fruits.push("pine apple");
+document.getElementById("p5").innerHTML=fruits;
+fruits[3]="guava"
+document.getElementById("p6").innerHTML=fruits;
+fruits[fruits.length]="muskmelon"
+document.getElementById("p7").innerHTML=fruits;
+
+delete fruits[2]
+document.getElementById("p8").innerHTML=fruits;
+
+fruits.splice(2,0,"grapes")
+document.getElementById("p9").innerHTML=fruits;
+
+var c3=fruits.concat(vegetables)
+document.getElementById("p10").innerHTML=c3;
+
+var b=fruits.slice(2,5)
+document.getElementById("p11").innerHTML=b;
+
+var c=fruits.sort()
+document.getElementById("p12").innerHTML=c;
+
+var c2=fruits.reverse()
+document.getElementById("p13").innerHTML=c2;
+
+var l=fruits.length
+document.getElementById("p14").innerHTML=l;
+document.getElementById("p15").innerHTML=fruits;
+var strlength=fruits[4].length
+document.getElementById("p16").innerHTML=strlength;
+
+</script>
+</body>

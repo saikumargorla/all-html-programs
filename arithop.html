@@ -1,0 +1,88 @@
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<form name="f1" style="font-family:arial;
+   font-size:16;margin-left:50;margin-top:50">
+Enter first number
+<input type="text" name="t1" id="text" onkeyup="enterNumber()"
+    style="margin-left:85;height:25;width:70"><br><br>
+Enter second number
+
+<input type="text" name="t2" id="text2" onkeyup="enterNumber2()" 
+    style="margin-left:60;height:25;width:70"><br><br>
+
+<input type="button"  value="addition" style="margin-right:30"
+    onclick="func();"  >
+
+<input type="button"  value="subtraction" style="margin-right:30"
+    onclick="func2();">
+
+
+<input type="button"  value="multiplication" style="margin-right:30"
+    onclick="func3();">
+
+
+<input type="button"  value="division" 
+    onclick="func4();"><br><br>
+	
+<label id="add"></label><br>
+<!--
+<br><label id="sub"></label><br>
+<label id="mul"></label><br>
+<label id="div"></label>
+-->
+</form>
+<script type="text/Javascript">
+function enterNumber(){
+
+  var e = document.getElementById('text')
+
+  if (!/^[0-9]+$/.test(e.value)) 
+{ 
+alert("Please enter onyl number.");
+
+
+}
+}
+function enterNumber2(){
+
+  var e = document.getElementById('text2')
+
+  if (!/^[0-9]+$/.test(e.value)) 
+{ 
+alert("Please enter onyl number.");
+} 
+}  
+function func(){
+var a,b;
+a=document.f1.t1.value
+b=document.f1.t2.value
+sum=parseInt(a)+parseInt(b)
+document.getElementById("add").innerHTML="Addtion is :"+"&nbsp"+sum+"&nbsp";
+}
+function func2(){
+var a,b;
+a=document.f1.t1.value
+b=document.f1.t2.value
+subtract=parseInt(a)-parseInt(b);
+document.getElementById("add").innerHTML="Subtraction is :"+"&nbsp"+subtract+"&nbsp";
+}
+function func3(){
+var a,b;
+a=document.f1.t1.value
+b=document.f1.t2.value
+subtract=parseInt(a)* parseInt(b);
+document.getElementById("add").innerHTML="Multiplication is :"+"&nbsp"+subtract+"&nbsp";
+}
+function func4(){
+var a,b;
+a=document.f1.t1.value
+b=document.f1.t2.value
+subtract=parseInt(a) /parseInt(b);
+document.getElementById("add").innerHTML="Division is :"+"&nbsp" +subtract+"&nbsp";
+}
+</script>
+</html>

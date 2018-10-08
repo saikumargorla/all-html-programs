@@ -1,0 +1,166 @@
+
+<html>
+<head>
+<style>
+input{
+width:400;
+height:40;
+border-radius:5px;
+border:1px solid gray;
+font-size:18;
+font-family:arial;
+padding-left:10px;
+}
+p{
+font-size:20;
+font-family:arial
+
+}
+#form-control-note {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #6a737d;
+}
+.text-red {
+    color: #cb2431!important;
+}
+.text-green {
+    color: #28a745!important;
+}
+
+</style>
+</head>
+<body style="background-color:#e6e6e6;">
+<form style="margin-left:300;margin-top:50" >
+<p style="font-size:30;font-family:arial">
+Create Your Account</p>
+<input type="text" 
+       placeholder="Your Name"  id="name1" name="name1" required>
+	 
+<br><br>
+<input type="text" 
+       placeholder="Mobile number or email address" id="name" name="Name" >
+	   <span id="sp1" ></span>
+<br><br>
+<input type="password" id="password-input-0"
+       placeholder="Password" >
+	
+	   
+	   
+	   
+	   <p id="form-control-note">Make sure it's 
+	   <span class="text-red">at least 7 characters</span>, 
+	   <span class="text-red">including a number</span>,
+	   <span class="text-green">and a lowercase letter</span>.</p>
+	   
+	   
+	   
+	   
+	   
+<p>Birthday<br>
+<input type="date" 
+       style="width:200;margin-top:5px;"><br><br>
+<label>
+<input type="radio" name="gender" 
+       style="width:15;height:15;background-color:#ffffff">
+	   Male</label>
+&emsp;
+<label>
+<input type="radio" name="gender" 
+       style="width:15;height:15;background-color:white">
+	   Female</label>
+<br><br>
+Choose Location<br>
+<select style="width:150;height:40;
+               font-size:16;margin-top:5px;">
+<option>Hyderabad</option>
+<option>Delhi</option>
+</select><br><br>
+<button style="width:200;height:40;
+        font-family:arial;background-color:#00802b;
+		color:white;font-size:20;border-radius:5px;
+		border:1px solid gray" onclick="checkform();">
+		Sign Up</button>
+</p>
+</form>
+<script type="text/Javascript">
+
+
+function checkform(){
+
+
+var passw = document.getElementById('password-input-0').value;
+//var passw2 = document.getElementById('password-input-1').value;
+var letter = /[a-z]/;
+var upper  =/[A-Z]/;
+var number = /[0-9]/;
+var name1=document.getElementById("name1").value
+var name=document.getElementById("name").value;
+var b=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+if(!b.test(name)){
+alert("invalid Email id")
+
+}
+
+if(passw.length < 7  || !letter.test(passw) || !number.test(passw) || !upper.test(passw)) {
+  /*
+  if(passw.length<7){
+    alert("Please make sure password is longer than 6 characters.")
+    return false;
+  }
+  
+  if(!letter.test(passw)){
+    alert("Please make sure password includes a lowercase letter.")
+    return false;
+  }
+  if(!number.test(passw)){
+    alert("Please make sure Password Includes a number")
+    return false;     
+  }
+  */
+  //if(!upper.test(passw)) {
+    //alert("Please make sure password includes an uppercase letter.");
+    //return false;
+ // }
+ alert("password should contain at least 7 characters, including a number, and a lowercase letter.")
+  return true
+}
+
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

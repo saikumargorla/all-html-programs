@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+ <link rel="stylesheet" href="stylesforexternalcsstable.css">
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY style="margin-left:100;margin-top:100;">
+  <table style="border-collapse:collapse;width:500;border:1px solid black">
+  <tr>
+  <td class="base">html</td>
+  <td></td>
+  <td></td>
+  <td class="sectioning1">output</td>
+  </tr>
+  <tr>
+  <td class="meta">base</td>
+  <td class="meta">header</td>
+  <td></td>
+  <td class="sectioning1">progress</td>
+  </tr>
+
+  <tr>
+  <td class="base">audio</td>
+  <td class="base">source</td>
+  <td class="sectioning2">thead</td>
+  <td class="sectioning1">select</td>
+  </tr>
+  <tr>
+  <td class="meta">param</td>
+  <td class="meta">input</td>
+  <td class="sectioning2">progress</td>
+  <td class="sectioning1">caption</td>
+  </tr>
+
+  <tr>
+  <td></td>
+  <td></td>
+  <td class="sectioning2">element</td>
+  <td class="sectioning2">shadow</td>
+  </tr>
+  </table>
+ </BODY>
+</HTML>

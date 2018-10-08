@@ -1,0 +1,33 @@
+<div class="click"><input id="b1" 
+type="button" value="" 
+style="margin-left:50;margin-top:100;padding-bottom:5px;
+padding-top:5px;font-size:20"></div>
+<div class="showup">
+<input id="Button" type="button" 
+	value="save"  
+	style="margin-left:50;
+	margin-top:10px;padding-bottom:5px;
+padding-top:5px;font-size:20" />
+</div>
+<script>
+var button = document.getElementById("Button");
+var clickBtn = document.getElementsByClassName('click')[0];
+
+// Disable the button on initial page load
+button.disabled = true;
+b1.value="enable"
+
+//add event listener
+clickBtn.addEventListener('click', function(event) {
+
+    button.disabled = !button.disabled;
+	if(b1.value==="disable"){
+	b1.value="enable"
+	}
+	else
+	{
+	b1.value="disable"
+	}
+});
+</script>
+

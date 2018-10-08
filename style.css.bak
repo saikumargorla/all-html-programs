@@ -1,0 +1,10 @@
+#fonttype{
+  font-family:arial;
+  color: blue;
+  font-size:20;
+  
+  }
+  .size{
+  font-size:30;
+  font-family:verdana;
+  }

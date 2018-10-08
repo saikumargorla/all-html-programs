@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY style="font-family:arial;size:16">
+<b> Unordered list</b>
+  <ul>
+ <li> HTML</li> 
+ <li>  CSS</li> 
+  <li> Javascript</li> 
+  </ul>
+ <b> Ordered list</b>
+  <ol type="1">
+  <li> HTML</li> 
+ <li>  CSS</li> 
+  <li> Javascript</li> 
+  </ol>
+  <b>Discription list</b>
+  <dl>
+  <dt>HTML</dt>
+  <dd>Hyper Text Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheet</dd>
+  <dt>JS</dt>
+  <dd>Java SCript</dd>
+  </dl>
+   
+ </BODY>
+</HTML>

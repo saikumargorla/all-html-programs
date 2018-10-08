@@ -1,0 +1,21 @@
+
+<html>
+<script type="text/Javascript">
+function func(){
+var i;
+var s=document.getElementById("txt1").value;
+//j=s.toFixed(2)
+ i = Math.round(s);
+ alert(i)
+ document.getElementById("par").innerHTML="The integer value for given decimal is :"+"&nbsp"+i
+ }
+</script>
+<body>
+<form style="font-family:arial;font-size:16;margin-top:50;margin-left:50" name="f1">
+Enter a decimal value : &nbsp;
+<input type="text" id="txt1" name="txt1"><br><br>
+<input type="button"   style="margin-left:200" value="Getintvalue" onclick="func();">
+<p id="par"></p>
+</form>
+</body>
+</html>

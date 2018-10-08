@@ -1,0 +1,23 @@
+
+<form style="margin-left:50;
+margin-top:50;font-family:arial;font-size:20">
+<input type="submit" name="sendNewSms" 
+       style="padding-bottom:5px;
+         padding-top:5px;font-size:20"
+      class="inputButton" id="sendNewSms" 
+      value=" Send " />
+<label>
+<input type="checkbox" id="disableBtn" 
+style="margin-left:30;margin-top:10px;
+padding-bottom:2px;margin-right:-0.5px;
+width:18;height:18">disable</label>
+</form>
+<script>
+var submit = document.getElementById('sendNewSms'),
+    checkbox = document.getElementById('disableBtn'),
+    disableSubmit = function(e) {
+    submit.disabled = this.checked
+    };
+
+checkbox.addEventListener('change', disableSubmit);
+</script>

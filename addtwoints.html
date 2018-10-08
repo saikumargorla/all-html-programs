@@ -1,0 +1,25 @@
+<script>
+function func(){
+var a,b;
+a=document.f1.t1.value
+b=document.f1.t2.value
+sum=parseInt(a)+parseInt(b)
+
+document.getElementById("add").innerHTML=sum;
+}
+
+</script>
+
+<form name="f1" style="font-family:arial;
+   font-size:16;margin-left:50;margin-top:50">
+Enter first number
+<input type="text" name="t1" 
+    style="margin-left:85;height:25;width:70"><br><br>
+Enter second number
+<input type="text" name="t2" 
+    style="margin-left:60;height:25;width:70">
+<input type="button"  value="add" 
+    onclick="func();"><br><br>
+Addition of two numbers is  &nbsp;&emsp;
+<label id="add"></label>
+</form>
